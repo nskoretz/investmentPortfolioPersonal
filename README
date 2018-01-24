@@ -1,0 +1,61 @@
+README
+
+Nicholas Skoretz    nskoretz@protonmail.com
+
+2017-11-29
+
+
+
+
+GENERAL PROBLEM
+The assignment specified that we make a working GUI for our Portfolio project,
+which we have been working on since the beginning of the semester.
+
+
+
+
+ASSUMPTIONS AND LIMITATIONS
+    There is an assumption that when adding to an existing investment, if the
+user matches the symbol but does not match the name, the program will continue
+anyways with just the symbols matching. As the symbols are unique.
+
+    It was assumed that the GUI did not need to look exactly like the
+mockups in the spec. As there was only one line that weakly said "Create an
+initial interface that looks like the first figure at the end of this
+description". All components are there and all the functionality works. I used
+GridBagLayout.
+
+I saw on the discussion boards that this project didn't need to save to a
+file. Mine does, but its a hardcoded path. The program saves and loads to
+"SavedInvestments.txt'
+
+
+
+
+BUILD AND TEST (USER GUIDE)
+Unpack the 'nskoretz_a3.tar.gz' and navigate inside to the 'a3' folder.
+Run 'javac *.java'
+Navigate up one directory.
+Run 'java a3.Portfolio'
+
+
+
+
+TEST PLAN
+For buying an investment ( stock or mutual fund ) I test each input to make
+sure it is of the right type, I prompt the user again if otherwise.
+
+To search, my function must cover cases where no symbol, keywords or range is
+input. It also must cover if only symbol is input, keywords are input, and
+only range is input. It must also cover all combinations of those inputs as
+well. As well as, a potentially large amount of keywords. It must also handle
+price range inputs such as
+-40
+40-
+40-50
+40.2
+
+
+
+IMPROVEMENTS
+
